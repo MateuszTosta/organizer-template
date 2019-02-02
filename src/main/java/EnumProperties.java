@@ -1,0 +1,3 @@
+public enum EnumProperties {
+CALORIES_AMOUNT, LOCALIZATION, VISIBLE_NOTE,
+}
