@@ -11,39 +11,47 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="settingsPane" prefHeight="2000.0" prefWidth="1390.0" style="-fx-background-color: #133337;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.settings.SettingsController">
-   <children>
-      <Pane prefHeight="100.0" prefWidth="1047.0">
-         <children>
-            <Label layoutX="112.0" layoutY="9.0" prefHeight="83.0" prefWidth="374.0" text="Settings" textFill="#f5cf7b">
-               <font>
-                  <Font name="Consolas" size="36.0" />
-               </font>
-               <effect>
-                  <Glow />
-               </effect>
-            </Label>
-            <ImageView fitHeight="83.0" fitWidth="77.0" layoutX="14.0" layoutY="12.0" onMouseClicked="#loadMain" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@icons/arrow-return.png" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <Glow level="0.2" />
-               </effect>
-            </ImageView>
-         </children>
-      </Pane>
-      <Accordion layoutX="56.0" layoutY="151.0" />
-      <ImageView fx:id="userName2" fitHeight="44.0" fitWidth="200.0" layoutX="353.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="88.0" layoutY="138.0" prefHeight="44.0" prefWidth="118.0" text="User Name" textFill="WHITE" />
-      <Label layoutX="88.0" layoutY="203.0" prefHeight="27.0" prefWidth="146.0" text="Localization" textFill="WHITE" />
-      <Label layoutX="88.0" layoutY="273.0" text="Calories limit" textFill="WHITE" />
-      <Slider  fx:id="slider" layoutX="233.0" layoutY="276.0" max="3500.0" min="500.0" opacity="0.7" prefHeight="21.0" prefWidth="285.0" value="10.0" />
-      <TextField fx:id="userName" layoutX="234.0" layoutY="141.0" opacity="0.2" prefHeight="39.0" prefWidth="275.0" />
-      <TextField fx:id="localization" layoutX="234.0" layoutY="203.0" opacity="0.2" prefHeight="39.0" prefWidth="275.0" />
-      <Label fx:id="calories" layoutX="532.0" layoutY="276.0" text="3500" textFill="WHITE" />
-   </children>
+<Pane fx:id="settingsPane" prefHeight="2000.0" prefWidth="1390.0" style="-fx-background-color: #133337;"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.sda.settings.SettingsController">
+    <children>
+        <Pane prefHeight="100.0" prefWidth="1047.0">
+            <children>
+                <Label layoutX="112.0" layoutY="9.0" prefHeight="83.0" prefWidth="374.0" text="Settings"
+                       textFill="#f5cf7b">
+                    <font>
+                        <Font name="Consolas" size="36.0"/>
+                    </font>
+                    <effect>
+                        <Glow/>
+                    </effect>
+                </Label>
+                <ImageView fitHeight="83.0" fitWidth="77.0" layoutX="14.0" layoutY="12.0" onMouseClicked="#loadMain"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/arrow-return.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <effect>
+                        <Glow level="0.2"/>
+                    </effect>
+                </ImageView>
+            </children>
+        </Pane>
+        <Accordion layoutX="56.0" layoutY="151.0"/>
+        <ImageView fx:id="userName2" fitHeight="44.0" fitWidth="200.0" layoutX="353.0" layoutY="137.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <Label layoutX="88.0" layoutY="138.0" prefHeight="44.0" prefWidth="118.0" text="User Name" textFill="WHITE"/>
+        <Label layoutX="88.0" layoutY="203.0" prefHeight="27.0" prefWidth="146.0" text="Localization" textFill="WHITE"/>
+        <Label layoutX="88.0" layoutY="273.0" text="Calories limit" textFill="WHITE"/>
+        <Slider id="calories" fx:id="slider" layoutX="233.0" layoutY="276.0" max="3500.0" min="500.0" opacity="0.7"
+                prefHeight="21.0" prefWidth="285.0" value="10.0"/>
+        <TextField id="userName" fx:id="userName" layoutX="234.0" layoutY="141.0" opacity="0.2" prefHeight="39.0"
+                   prefWidth="275.0"/>
+        <TextField id="localization" fx:id="localization" layoutX="234.0" layoutY="203.0" opacity="0.2"
+                   prefHeight="39.0" prefWidth="275.0"/>
+        <Label fx:id="calories" layoutX="532.0" layoutY="276.0" text="3500" textFill="WHITE"/>
+    </children>
 </Pane>

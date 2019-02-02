@@ -14,9 +14,9 @@ public class Main extends Application {
     private Logger logger = LogManager.getLogger(Main.class);
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         URL resource = getClass().getClassLoader().getResource("main.fxml");
-        if(resource!=null) {
+        if (resource != null) {
             Parent root = FXMLLoader.load(resource);
             primaryStage.setTitle("App");
             primaryStage.setScene(new Scene(root, 600, 600));
